@@ -1,3 +1,3 @@
 public enum Material {
-ALGODON,SEDA,CUERO;
+ALGODON,SEDA,CUERO
 }
