@@ -12,6 +12,8 @@ public class PrendaBuilder {
     private void validarCreacion() {
         if (tipoPrenda == null || material == null)
             throw new PrendaBuilderException("Seleccionar tipo de Prenda Primero, y luego el Material");
+
+        
     }
     public PrendaBuilder seleccionarTipoPrenda(TipoDePrenda tipoPrenda){
         this.tipoPrenda =tipoPrenda;
@@ -44,6 +46,9 @@ public class PrendaBuilder {
     }
 
     public Prenda crearPrenda(){
+
+        validarCreacion();
+
         if (trama == null) trama = Trama.LISA;
         return new Prenda(trama,tipoPrenda,material,colorPrimario,colorSecundario);
     }

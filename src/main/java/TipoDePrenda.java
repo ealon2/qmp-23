@@ -4,7 +4,7 @@ public enum TipoDePrenda {
   PANTALON(CategoriaPrenda.INFERIOR),
   REMERA(CategoriaPrenda.SUPERIOR);
 
-  CategoriaPrenda categoriaPrenda;
+  private CategoriaPrenda categoriaPrenda;
 
   TipoDePrenda(CategoriaPrenda categoriaPrenda){
     this.categoriaPrenda = categoriaPrenda;
@@ -13,4 +13,6 @@ public enum TipoDePrenda {
   CategoriaPrenda getCategoria(){
     return categoriaPrenda;
   }
+
+
 }

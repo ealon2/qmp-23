@@ -9,6 +9,7 @@ public class Prenda {
   private Trama trama;
 
   public Prenda(Trama trama, TipoDePrenda tipoDePrenda, Material material, Color colorPrimario, Color colorSecundario){
+    //validaciones faltarian aca
     this.trama = trama;
     this.tipoDePrenda = tipoDePrenda;
     this.material = material;
